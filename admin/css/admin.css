@@ -1,0 +1,148 @@
+#nav{
+    background: #BE202F;
+    /*position: fixed;*/
+    width: 100%;
+   /* z-index: 99;*/
+    /*padding: 10px;*/
+}
+#nav .user{
+    overflow: hidden;
+    padding-top: 7px;
+    margin: 0;
+    float: left;
+    color: #fff;
+}
+#nav a{
+    color: #fff;
+    text-decoration: none;
+}
+#nav ul{
+    list-style-type: none;
+    float: right;
+    padding: 4.5px;
+    margin: 0;
+    overflow: hidden;
+}
+#nav ul li{
+    display: inline;
+    font-size: 17px;
+    padding: 9px;
+    margin-right: -4px;
+    color: #fff;
+    cursor: pointer;
+}
+#hamburger{
+    width: 35px;
+    padding-top: 3px;
+    float: right;
+    text-align: right;
+    display: none;
+}
+.hamburger-bar{
+    background: #fff;
+    height: 3px;
+    margin-bottom: 7px;
+}
+#menu li:hover{
+    background: #74000B;
+}
+#menu .active{
+    background: #74000B;
+}
+#content{
+   /* padding-top: 25px;*/
+}
+.logo img{
+    height: 100px;
+    display: block;
+    margin: 15px auto
+}
+.section_toggler{
+    cursor: pointer;
+}
+.toggle_div{
+    overflow: hidden;
+    display: none;
+}
+section{
+    background: #D3D3D3;
+    padding: 0px 25px;
+    box-shadow: -10px 10px 10px #333;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    /*max-height: 550px;*/
+    overflow: auto;
+}
+section h1{
+    font-size: 25px;
+}
+section .table-wrapper{
+    overflow: auto;
+    max-height: 300px;
+    margin-bottom: 25px;
+}
+section img{
+    height: 100px;
+    display: block;
+}
+.table th, .table td, .table td img{
+    vertical-align: middle !important;
+    text-align: center;
+}
+.table img{
+    display: block !important;
+    margin: auto !important;
+}
+/*.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th{
+    background-color: #BE202F !important;
+    color: #fff;
+}*/
+input[type="text"]{
+    display: block;
+    border: solid 2px #BE202F !important;
+}
+input[type="password"]{
+    display: block;
+    border: solid 2px #BE202F !important;
+}
+input[type="email"]{
+    display: block;
+    border: solid 2px #BE202F !important;
+}
+textarea{
+    border: solid 2px #BE202F !important;
+}
+.error{
+    background: red;
+    width: 100%;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+#password_show{
+    display: inline-block;
+}
+#classesAndPrograms table tr td{
+    text-align: center;
+    vertical-align: middle;
+}
+#classesAndPrograms img{
+    height: 100px;
+}
+/*===MEDIA QUERIES===*/
+@media(max-width: 705px){
+    #hamburger{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+    #nav ul{
+        clear: both;
+        float: none;
+    }
+    #nav ul li{
+        display: block;
+        padding: 10px;
+    }
+}

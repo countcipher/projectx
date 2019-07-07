@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+}
+img{
+    padding: 25px;
+}
+input{
+    max-width: 300px;
+    margin: auto;
+    display: block;
+    border: solid 2px #BE202F !important;
+}
+/*input:focus{
+    background: radial-gradient(red, white, red);
+}*/
+a{
+    display: block;
+    margin: 10px;
+    color: #BE202F;
+}
+p{
+    color: #BE202F;
+    font-size: 17px;
+}
+.error{
+    background: red;
+    width: 298px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+/*.btn{
+    border: none !important;
+    background: #BE202F;
+    color: #fff;
+    transition: .2s
+}
+.btn:hover{
+    background: #74000B;
+    color: #fff;
+}*/
