@@ -252,31 +252,32 @@ include "includes/submit_button_functions.php";
                             </form>
                         
                         <hr>
-                           
-                           <table class="table table-responsive table-bordered table-striped">
-                              <thead>
-                                  <tr>
-                                      <th>Featured Image</th>
-                                      <th>Heading</th>
-                                      <th>Text</th>
-                                      <th>Delete</th>
-                                  </tr>
-                              </thead>
-                              <tbody>
-                                  <?php $result = select_all_table_content('about_post_types'); ?>
+                           <div class="table-div">
+                               <table class="table table-responsive table-bordered table-striped">
+                                  <thead>
+                                      <tr>
+                                          <th>Featured Image</th>
+                                          <th>Heading</th>
+                                          <th>Text</th>
+                                          <th>Delete</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <?php $result = select_all_table_content('about_post_types'); ?>
 
-                                  <?php while($row = mysqli_fetch_assoc($result)) : ?>
+                                      <?php while($row = mysqli_fetch_assoc($result)) : ?>
 
-                                    <tr>
-                                        <td><img src="../<?php echo $row['featured_image']; ?>" alt=""></td>
-                                        <td><?php echo $row['heading']; ?></td>
-                                        <td><?php echo $row['text']; ?></td>
-                                        <td><a href="delete_post_type.php?id=<?php echo $row['id']; ?>&table=about_post_types&section=about_section"><button class="btn">Delete</button></a></td>
-                                    </tr>
+                                        <tr>
+                                            <td><img src="../<?php echo $row['featured_image']; ?>" alt=""></td>
+                                            <td><?php echo $row['heading']; ?></td>
+                                            <td><?php echo $row['text']; ?></td>
+                                            <td><a href="delete_post_type.php?id=<?php echo $row['id']; ?>&table=about_post_types&section=about_section"><button class="btn">Delete</button></a></td>
+                                        </tr>
 
-                                  <?php endwhile; ?>                              
-                              </tbody>
-                          </table>
+                                      <?php endwhile; ?>                              
+                                  </tbody>
+                              </table>
+                          </div>
                           
                           <form action="" method="post" enctype="multipart/form-data">
                           
