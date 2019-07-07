@@ -16,3 +16,6 @@ body, html{
 .table-div{
     overflow: auto !important;
 }
+.table-div table td{
+    min-width: 100px;
+}
